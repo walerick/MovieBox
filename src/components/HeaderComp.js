@@ -44,6 +44,7 @@ const HeaderComp = ({ API_KEY, BASE_URL }) => {
             zIndex: -5,
             position: "relative",
             borderRadius: "0",
+            paddingLeft: "5rem",
           }}
         >
           <div
@@ -63,10 +64,15 @@ const HeaderComp = ({ API_KEY, BASE_URL }) => {
             <button
               style={{
                 backgroundColor: "red",
+                color: "white",
                 border: "none",
                 borderRadius: "5px",
                 padding: "5px 15px",
                 marginBottom: "2rem",
+                display: "flex",
+                alignItems: "center",
+                gap: "10px",
+                cursor: "pointer",
               }}
             >
               <PlayCircleIcon></PlayCircleIcon>

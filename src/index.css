@@ -15,9 +15,10 @@ code {
 .navbar{
   display: flex;
   align-items: center;
-  width: 80vw;
+  width: 80%;
   justify-content: space-between;
-  padding: 1rem 4rem;
+  padding-top: 1rem;
+  margin-left: 5rem;
   position: absolute;
   top: 0;
   z-index: 10;
@@ -28,7 +29,10 @@ code {
 .header{
   /* height: 80vh; */
 }
+.movie-list a {
+  text-decoration: none;
+}
 
-.movie-header{
-  
+.side-nav Tab{
+  background-color: blue;
 }

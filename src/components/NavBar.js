@@ -25,8 +25,8 @@ const NavBar = () => {
         <button
           style={{
             backgroundColor: "red",
-            borderRadius: "150%",
-            padding: "4px",
+            borderRadius: "50%",
+            padding: "5px",
             border: "None",
           }}
         >

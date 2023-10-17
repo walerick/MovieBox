@@ -6,19 +6,24 @@ import TvIcon from "@mui/icons-material/Tv";
 import EventIcon from "@mui/icons-material/Event";
 import LogoutIcon from "@mui/icons-material/Logout";
 import { styled } from "@mui/system";
+// For the tabssss
+import Tabs from "@mui/joy/Tabs";
+import TabList from "@mui/joy/TabList";
+import Tab from "@mui/joy/Tab";
+import TabPanel from "@mui/joy/TabPanel";
 
-const SidenavContainer = styled("div")({
+const SidenavContainer = styled("tabss")({
   backgroundColor: "#fff",
-  border: "1px solid red",
+  border: "1px solid #CFCFCF",
   borderRadius: "0 50px 50px 0",
   color: "#333",
   width: "230px",
-  //   height: "90%",
+  // height: "100%",
   position: "absolute",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  paddingTop: "2rem",
+  paddingBlock: "4rem",
 });
 
 const StyledLink = styled(Link)({
@@ -36,49 +41,76 @@ const StyledIcon = styled("span")({
 
 const SideNav = () => {
   return (
-    <SidenavContainer>
-      <div
-        className="header-logo"
-        style={{ display: "flex", gap: "10px", alignItems: "center" }}
-      >
-        <img
-          src="https://hngx-stagetwo.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftv.cf114103.png&w=64&q=75"
-          alt="logo"
-          height={"50px"}
-        />
-        <h2 style={{ color: "#333" }}>MovieBox</h2>
-      </div>
-      <StyledLink to="/">
-        <StyledIcon>
-          <HomeIcon />
-        </StyledIcon>
-        Home
-      </StyledLink>
-      <StyledLink to="/movies">
-        <StyledIcon>
-          <MovieIcon />
-        </StyledIcon>
-        Movies
-      </StyledLink>
-      <StyledLink to="/tv-series">
-        <StyledIcon>
-          <TvIcon />
-        </StyledIcon>
-        TV Series
-      </StyledLink>
-      <StyledLink to="/upcoming">
-        <StyledIcon>
-          <EventIcon />
-        </StyledIcon>
-        Upcoming
-      </StyledLink>
-      <StyledLink to="/logout">
-        <StyledIcon>
-          <LogoutIcon />
-        </StyledIcon>
-        Logout
-      </StyledLink>
-    </SidenavContainer>
+    <Tabs
+      className="side-nav"
+      aria-label="Vertical tabs"
+      orientation="vertical"
+      sx={{
+        border: "1px solid #CFCFCF",
+        borderRadius: "0 50px 50px 0",
+        position: "absolute",
+      }}
+    >
+      <TabList disableUnderline>
+        <div
+          className="header-logo"
+          style={{
+            display: "flex",
+            gap: "10px",
+            alignItems: "center",
+            marginBlock: "2rem",
+            marginInline: "1rem",
+          }}
+        >
+          <img
+            src="https://hngx-stagetwo.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftv.cf114103.png&w=64&q=75"
+            alt="logo"
+            height={"30px"}
+          />
+          <h3 style={{ color: "#333" }}>MovieBox</h3>
+        </div>
+        <Tab>
+          <StyledLink to="/">
+            <StyledIcon>
+              <HomeIcon />
+            </StyledIcon>
+            Home
+          </StyledLink>
+        </Tab>
+        <Tab>
+          <StyledLink to="#">
+            <StyledIcon>
+              <MovieIcon />
+            </StyledIcon>
+            Movies
+          </StyledLink>
+        </Tab>
+        <Tab>
+          <StyledLink to="#">
+            <StyledIcon>
+              <TvIcon />
+            </StyledIcon>
+            TV Series
+          </StyledLink>
+        </Tab>
+        <Tab>
+          <StyledLink to="#">
+            <StyledIcon>
+              <EventIcon />
+            </StyledIcon>
+            Upcoming
+          </StyledLink>
+        </Tab>
+        <Tab>
+          <StyledLink to="#">
+            <StyledIcon>
+              <LogoutIcon />
+            </StyledIcon>
+            Logout
+          </StyledLink>
+        </Tab>
+      </TabList>
+    </Tabs>
   );
 };
 
