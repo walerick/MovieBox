@@ -1,8 +1,6 @@
 import * as React from "react";
 import useFetch from "./useFetch";
-import { Box, FormControl } from "@mui/joy";
-import { InputAdornment } from "@mui/material";
-import Autocomplete from "@mui/joy/Autocomplete";
+import { Box, FormControl, Autocomplete } from "@mui/joy";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 
 export default function InputWithIcon() {

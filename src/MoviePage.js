@@ -1,15 +1,11 @@
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SideNav from "./components/SideNav";
-import Card from "@mui/joy/Card";
-import Box from "@mui/joy/Box";
-import Button from "@mui/joy/Button";
+import { Card, Box, Button, IconButton, CircularProgress } from "@mui/joy";
 import BookOnlineIcon from "@mui/icons-material/BookOnline";
 import ListIcon from "@mui/icons-material/List";
-import IconButton from "@mui/joy/IconButton";
 import PlayCircleFilledIcon from "@mui/icons-material/PlayCircleFilled";
 import Grid from "@mui/material/Unstable_Grid2";
-import CircularProgress from "@mui/joy/CircularProgress";
 
 const MoviePage = () => {
   const API_KEY = "b5ebf82e178f94307836ec078a4ed051";
