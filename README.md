@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# MovieBox
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A movie web application that allows users to search for movies, view details about them and save their favorites.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Preview
 
-### `npm start`
+### Homepage
+![React-App](https://github.com/walerick/MovieBox/assets/55299278/9f9833b1-c429-48ac-a082-0cc787b041d9)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Moviepage
+![React-App2](https://github.com/walerick/MovieBox/assets/55299278/e851489a-f737-4078-a8d2-febad7c01626)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###Demo
 
-### `npm test`
+## How to use
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository
+2. Install dependencies `npm install`
+3. Run the app `npm run start`
+4. Enjoy.
 
-### `npm run build`
+   
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Feature 1: Hero section with treading movies that changes on refresh of the page
+Feature 2: Search functionality that helps user to search movies by title and view the movies details on click of the searched movie
+Feature 3: Featured top 20 movies with their posters, titles and released dates
+Feature 4: Show the full movie details on click of the movie poster
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributing
 
-### `npm run eject`
+If you wish to contribute to this project, clone it, make your changes, create your branch, push and create a pull request 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author: Adewale Bakare
