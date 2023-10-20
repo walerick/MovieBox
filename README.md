@@ -12,6 +12,7 @@ A movie web application that allows users to search for movies, view details abo
 ![React-App2](https://github.com/walerick/MovieBox/assets/55299278/e851489a-f737-4078-a8d2-febad7c01626)
 
 ###Demo
+
 https://moviesbocks.vercel.app/
 
 ## How to use
