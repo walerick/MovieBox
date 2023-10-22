@@ -62,11 +62,7 @@ const SideNav = () => {
             marginInline: "1rem",
           }}
         >
-          <img
-            src="https://hngx-stagetwo.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftv.cf114103.png&w=64&q=75"
-            alt="logo"
-            height={"30px"}
-          />
+          <img src={require("../moviebox_logo.png")} alt="logo" />
           <h3 style={{ color: "#333" }}>MovieBox</h3>
         </div>
         <Tab>

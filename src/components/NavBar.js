@@ -8,11 +8,7 @@ const NavBar = () => {
         className="header-logo"
         style={{ display: "flex", gap: "10px", alignItems: "center" }}
       >
-        <img
-          src="https://hngx-stagetwo.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftv.cf114103.png&w=64&q=75"
-          alt="logo"
-          height={"50px"}
-        />
+        <img src={require("../moviebox_logo.png")} alt="logo" />
         <h2 style={{ color: "white" }}>MovieBox</h2>
       </div>
 
