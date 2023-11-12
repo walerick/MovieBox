@@ -51,22 +51,34 @@ const MoviePage = () => {
         />
       )}
       {firstVideo && (
-        <div
-          className="movie-container"
-          style={{ paddingBlock: "20px", marginInline: "250px 30px" }}
-        >
+        <div className="movie-container">
           <div className="movie-video">
             <div>
               <p>{firstVideo.name}</p>
-              <iframe
-                width="1000"
-                height="500"
-                borderRadius="12px"
-                src={`https://www.youtube.com/embed/${firstVideo.key}`}
-                title={firstVideo.name}
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+              <Box
+                sx={{
+                  position: "relative",
+                  overflow: "hidden",
+                  width: "90vw",
+                  aspectRatio: "16/9", // Adjust the aspect ratio as needed
+                  borderRadius: "12px",
+                }}
+              >
+                <iframe
+                  title={firstVideo.name}
+                  src={`https://www.youtube.com/embed/${firstVideo.key}`}
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    border: "none",
+                  }}
+                ></iframe>
+              </Box>
             </div>
           </div>
 

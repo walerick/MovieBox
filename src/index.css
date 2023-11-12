@@ -36,6 +36,11 @@ code {
   background-color: blue;
 }
 
+.movie-container{
+  padding-block: 20px;
+  margin-inline: 250px 30px;
+}
+
 .logo-sm{
   display: none;
   gap: 10px;
@@ -48,7 +53,7 @@ code {
   .search-movies {
     scale: 0;
   }
-  .navbar{
+  .navbar, .side-nav{
     scale: 0;
   }
 
@@ -64,5 +69,12 @@ code {
     justify-content: center;
   }
 
+
+  .movie-container{
+    margin-inline: 10px;
+  }
+  .movie-video{
+    width: 200px;
+  }
   
 }
