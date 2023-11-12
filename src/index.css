@@ -22,17 +22,47 @@ code {
   position: absolute;
   top: 0;
   z-index: 10;
-  /* border: 1px solid red; */
-  
 }
 
-.header{
-  /* height: 80vh; */
+.movie-list .movie-item{
+  display: grid;
 }
+
 .movie-list a {
   text-decoration: none;
 }
 
 .side-nav Tab{
   background-color: blue;
+}
+
+.logo-sm{
+  display: none;
+  gap: 10px;
+  align-items: center;
+  position: absolute;
+  left: 30%;
+}
+
+@media (max-width: 845px) {
+  .search-movies {
+    scale: 0;
+  }
+  .navbar{
+    scale: 0;
+  }
+
+ .headers .movie-header .logo-sm{
+    display: flex;
+  }
+
+  .desc {
+    font-size: .7rem; 
+  }
+  .movie-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  
 }

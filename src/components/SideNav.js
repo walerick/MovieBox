@@ -18,7 +18,6 @@ const SidenavContainer = styled("tabss")({
   borderRadius: "0 50px 50px 0",
   color: "#333",
   width: "230px",
-  // height: "100%",
   position: "absolute",
   display: "flex",
   flexDirection: "column",
@@ -66,19 +65,19 @@ const SideNav = () => {
           <h3 style={{ color: "#333" }}>MovieBox</h3>
         </div>
         <Tab>
-          <StyledLink to="/">
-            <StyledIcon>
-              <HomeIcon />
-            </StyledIcon>
-            Home
-          </StyledLink>
-        </Tab>
-        <Tab>
           <StyledLink to="#">
             <StyledIcon>
               <MovieIcon />
             </StyledIcon>
             Movies
+          </StyledLink>
+        </Tab>
+        <Tab>
+          <StyledLink to="/">
+            <StyledIcon>
+              <HomeIcon />
+            </StyledIcon>
+            Home
           </StyledLink>
         </Tab>
         <Tab>

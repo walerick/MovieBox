@@ -12,7 +12,7 @@ export default function InputWithIcon() {
     error,
   } = useFetch(`${BASE_URL}/movie/popular?api_key=${API_KEY}`);
   return (
-    <Box>
+    <Box className="search-movies">
       <FormControl
         id="free-solo-2-demo"
         style={{ width: "30rem", color: "white" }}

@@ -15,12 +15,12 @@ const MoviePage = () => {
   const [error, setError] = useState(null);
   const { id } = useParams();
   useEffect(() => {
-    fetch(`${BASE_URL}/movie/${id}?api_key=${API_KEY}`)
+    fetch(`${BASE_URL}/movie/${id}/videos?api_key=${API_KEY}`)
       .then((res) => {
         return res.json();
       })
       .then((data) => {
-        setMovies(data);
+        setMovies(data.results);
         setIsPending(false);
         setError(null);
       })
@@ -28,11 +28,13 @@ const MoviePage = () => {
         setIsPending(false);
         setError(err.message);
       });
-  }, []);
+  }, [id]);
 
   useEffect(() => {
     console.log(movies);
   }, [movies]);
+
+  const firstVideo = movies.length > 0 ? movies[0] : null;
 
   return (
     <div className="MoviePage" style={{ margin: "0" }}>
@@ -48,40 +50,26 @@ const MoviePage = () => {
           style={{ position: "fixed", left: "50%", top: "50%" }}
         />
       )}
-      {movies && (
+      {firstVideo && (
         <div
           className="movie-container"
           style={{ paddingBlock: "20px", marginInline: "250px 30px" }}
         >
-          <Card
-            className="movie-video-card"
-            sx={{
-              backgroundImage: `url('https://image.tmdb.org/t/p/original/${movies.backdrop_path}')`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              height: "60vh",
-              zIndex: -5,
-              position: "relative",
-              borderRadius: "18px",
-            }}
-          >
-            <IconButton
-              aria-label="Like minimal photography"
-              variant="solid"
-              color="action"
-              sx={{
-                position: "absolute",
-                zIndex: 2,
-                borderRadius: "50%",
-                bottom: "50%",
-                right: "50%",
-                transform: "translate(50%, 50%)",
-              }}
-            >
-              <PlayCircleFilledIcon sx={{ fontSize: "90px", color: "white" }} />
-            </IconButton>
-          </Card>
+          <div className="movie-video">
+            <div>
+              <p>{firstVideo.name}</p>
+              <iframe
+                width="1000"
+                height="500"
+                borderRadius="12px"
+                src={`https://www.youtube.com/embed/${firstVideo.key}`}
+                title={firstVideo.name}
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+
           <div className="movie-desc" style={{ display: "flex", gap: "1rem" }}>
             <h3>{movies.title} .</h3>
             <h3>{movies.release_date} .</h3>

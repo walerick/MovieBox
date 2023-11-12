@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import Card from "@mui/joy/Card";
+import Button from "@mui/joy/Button";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-
+import OpenInNew from "@mui/icons-material/OpenInNew";
 const HeaderComp = ({ API_KEY, BASE_URL }) => {
   const [movies, setMovies] = useState([]);
   const [isPending, setIsPending] = useState(true);
@@ -28,7 +30,7 @@ const HeaderComp = ({ API_KEY, BASE_URL }) => {
       });
   }, []);
   return (
-    <div className="header">
+    <div className="headers" tabIndex={0}>
       {error && <div>{error}</div>}
       {isPending && <div>loading...</div>}
 
@@ -44,9 +46,17 @@ const HeaderComp = ({ API_KEY, BASE_URL }) => {
             zIndex: -5,
             position: "relative",
             borderRadius: "0",
-            paddingLeft: "5rem",
+            // paddingLeft: "5rem",
           }}
         >
+          <div className="logo-sm">
+            <img
+              src={require("../moviebox_logo.png")}
+              alt="logo"
+              width={"40px"}
+            />
+            <h4 style={{ color: "white" }}>MovieBox</h4>
+          </div>
           <div
             className="desc"
             style={{

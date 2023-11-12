@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import {
   Card,
   CardContent,
+  Container,
   Typography,
   AspectRatio,
   CardOverflow,
@@ -24,10 +25,10 @@ const MovieList = ({ API_KEY, BASE_URL }) => {
       {error && <div>{error}</div>}
       {isPending && <div>loading...</div>}
       {movies && (
-        <Card style={{ paddingLeft: "3rem", border: "none" }}>
-          <Grid container spacing={1}>
+        <Container maxWidth="lg">
+          <Grid container spacing={3}>
             {movies.map((movie) => (
-              <Grid item xs={3}>
+              <Grid item xs={12} sm={6} md={4} lg={3} key={movie.id}>
                 <Link to={`/movies/${movie.id}`}>
                   <Card
                     sx={{
@@ -109,7 +110,7 @@ const MovieList = ({ API_KEY, BASE_URL }) => {
               </Grid>
             ))}
           </Grid>
-        </Card>
+        </Container>
       )}
     </div>
   );
