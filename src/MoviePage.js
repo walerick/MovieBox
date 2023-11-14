@@ -59,7 +59,7 @@ const MoviePage = () => {
                 sx={{
                   position: "relative",
                   overflow: "hidden",
-                  width: "90vw",
+                  width: "80vw",
                   aspectRatio: "16/9", // Adjust the aspect ratio as needed
                   borderRadius: "12px",
                 }}

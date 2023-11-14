@@ -10,7 +10,6 @@ import { styled } from "@mui/system";
 import Tabs from "@mui/joy/Tabs";
 import TabList from "@mui/joy/TabList";
 import Tab from "@mui/joy/Tab";
-import TabPanel from "@mui/joy/TabPanel";
 
 const SidenavContainer = styled("tabss")({
   backgroundColor: "#fff",
