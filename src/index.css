@@ -67,6 +67,9 @@ code {
   .movie-list {
     display: flex;
     justify-content: center;
+    /* border: 1px solid red; */
+    /* margin-left: 50%; */
+    padding-left: 13%;
   }
 
 
